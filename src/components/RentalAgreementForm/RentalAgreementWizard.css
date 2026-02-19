@@ -1,0 +1,160 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+}
+
+/* TOP BAR */
+.header {
+  background: linear-gradient(90deg, #1f2361, #2b2f85);
+  height: 130px;
+  color: #fff;
+  padding: 20px 60px;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: -70px;
+  padding: 20px;
+}
+
+/* LEFT CARD */
+.card {
+  background: #fff;
+  width: 560px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+}
+
+.summary-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.section {
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 18px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.status {
+  color: #18a957;
+  font-weight: 700;
+}
+
+/* ADDONS */
+.addon {
+  border: 1px solid #eef1f6;
+  padding: 18px;
+  border-radius: 12px;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.25s;
+}
+
+.addon:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.addon-title {
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.addon small {
+  color: #666;
+}
+
+.btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-btn {
+  background: #e7f7ef;
+  color: #089e57;
+}
+
+.remove-btn {
+  background: #ffe9e9;
+  color: #d80000;
+}
+
+/* PAYMENT PANEL */
+.payment {
+  background: #fff;
+  width: 320px;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+  position: sticky;
+  top: 30px;
+}
+
+.total {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.pay-btn {
+  background: #ff2d2d;
+  color: #fff;
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pay-btn:hover {
+  background: #e60000;
+}
+
+.badge {
+  background: #eef3ff;
+  color: #3d4eff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.highlight {
+  border: 2px solid #4f6cff;
+  background: #f7f9ff;
+}
