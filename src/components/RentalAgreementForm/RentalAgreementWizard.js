@@ -130,6 +130,71 @@ export default function RentalAgreement() {
           </button>
         </div>
       </div>
+
+      {/* CADRE ARBITRATION CLAUSES */}
+      <div className="cadre-clauses-section">
+        <div className="cadre-clauses-header">
+          <div className="cadre-clauses-icon">
+            <i className="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div>
+            <h2>Arbitration &amp; Dispute Resolution Clauses</h2>
+            <p>Powered by CADRE ODR — Online Dispute Resolution Platform</p>
+          </div>
+        </div>
+
+        <div className="cadre-clauses-grid">
+          {/* Clause 1 */}
+          <div className="cadre-clause-card">
+            <div className="clause-number">Clause 1</div>
+            <h3>General Arbitration Clause</h3>
+            <p>
+              Any dispute, controversy, or claim arising out of or relating to this Agreement, including its interpretation, performance, breach, termination, or validity, shall be referred to and finally resolved by arbitration in accordance with the Arbitration and Conciliation Act, 1996.
+            </p>
+            <p>
+              The arbitration shall be conducted by a sole arbitrator mutually appointed by the parties. The seat and venue of arbitration shall be [City, India]. The proceedings shall be conducted in the English language.
+            </p>
+            <p>
+              The arbitral award shall be final and binding upon the parties.
+            </p>
+          </div>
+
+          {/* Clause 2 */}
+          <div className="cadre-clause-card">
+            <div className="clause-number">Clause 2</div>
+            <h3>CADRE ODR Administered Arbitration</h3>
+            <p>
+              All disputes, claims, counterclaims, or differences of any nature whatsoever, whether in contract, tort, statute, or otherwise, arising out of or relating to this Agreement or the relationship between the parties, shall be referred to arbitration administered by CADRE ODR in accordance with its applicable rules and the Arbitration and Conciliation Act, 1996, as amended.
+            </p>
+            <p>
+              The arbitration shall be conducted by a sole arbitrator appointed as per the CADRE ODR Rules. The seat of arbitration shall be Bengaluru, India, and the language shall be English.
+            </p>
+            <p>
+              The award rendered shall be final, conclusive, and binding on the parties.
+            </p>
+          </div>
+
+          {/* Clause 3 */}
+          <div className="cadre-clause-card">
+            <div className="clause-number">Clause 3</div>
+            <h3>CADRE ODR with Exclusive Jurisdiction</h3>
+            <p>
+              Any dispute, difference, or claim arising out of or in connection with this Agreement shall be referred to and finally resolved by arbitration administered by CADRE ODR in accordance with its rules and the Arbitration and Conciliation Act, 1996, as amended from time to time.
+            </p>
+            <p>
+              The tribunal shall consist of a sole arbitrator appointed under the CADRE ODR Rules. The seat and legal place of arbitration shall be Bengaluru, India, and the language of arbitration shall be English.
+            </p>
+            <p>
+              The courts at Bengaluru shall have exclusive jurisdiction in matters arising out of or relating to the arbitration proceedings. The award shall be final and binding on the parties.
+            </p>
+          </div>
+        </div>
+
+        <div className="cadre-clauses-footer-note">
+          <i className="fa-solid fa-circle-info"></i>
+          These clauses are included in your rental agreement to ensure fair, fast, and legally binding dispute resolution without the need for court visits.
+        </div>
+      </div>
     </div>
   );
 }
