@@ -19,6 +19,11 @@
   color: #fff;
 }
 
+.footer-section p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
 .footer-section ul {
   list-style: none;
   padding: 0;
@@ -43,4 +48,36 @@
   text-align: center;
   padding-top: 20px;
   border-top: 1px solid #34495e;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 30px 16px;
+    margin-top: 40px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 24px 12px;
+    margin-top: 30px;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
 }
