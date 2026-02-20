@@ -1,12 +1,12 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f5f7fb;
+  background: #000;
   margin: 0;
 }
 
 /* TOP BAR */
 .header {
-  background: linear-gradient(90deg, #1f2361, #2b2f85);
+  background: #000;
   height: 130px;
   color: #fff;
   padding: 20px 40px;
@@ -132,8 +132,8 @@ body {
 }
 
 .pay-btn {
-  background: #ff2d2d;
-  color: #fff;
+  background: #FFD700;
+  color: #000;
   width: 100%;
   margin-top: 18px;
   padding: 14px;
@@ -145,12 +145,12 @@ body {
 }
 
 .pay-btn:hover {
-  background: #e60000;
+  background: #FFC107;
 }
 
 .badge {
-  background: #eef3ff;
-  color: #3d4eff;
+  background: #fff8e1;
+  color: #FFD700;
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 12px;
@@ -158,8 +158,8 @@ body {
 }
 
 .highlight {
-  border: 2px solid #4f6cff;
-  background: #f7f9ff;
+  border: 2px solid #FFD700;
+  background: #fffde7;
 }
 
 /* ===== CADRE ARBITRATION CLAUSES ===== */
@@ -179,12 +179,12 @@ body {
 .cadre-clauses-header .cadre-clauses-icon {
   width: 56px;
   height: 56px;
-  background: linear-gradient(135deg, #4f6cff, #6b5ce7);
+  background: linear-gradient(135deg, #FFD700, #FFC107);
   border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #000;
   font-size: 24px;
   flex-shrink: 0;
 }
@@ -192,7 +192,7 @@ body {
 .cadre-clauses-header h2 {
   font-size: 22px;
   font-weight: 700;
-  color: #1f2361;
+  color: #FFD700;
   margin: 0 0 4px;
 }
 
@@ -213,7 +213,7 @@ body {
   border-radius: 14px;
   padding: 28px 30px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-  border-left: 5px solid #4f6cff;
+  border-left: 5px solid #FFD700;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -224,8 +224,8 @@ body {
 
 .cadre-clause-card .clause-number {
   display: inline-block;
-  background: linear-gradient(135deg, #4f6cff, #6b5ce7);
-  color: #fff;
+  background: linear-gradient(135deg, #FFD700, #FFC107);
+  color: #000;
   font-size: 12px;
   font-weight: 700;
   padding: 4px 14px;
@@ -238,7 +238,7 @@ body {
 .cadre-clause-card h3 {
   font-size: 18px;
   font-weight: 700;
-  color: #1f2361;
+  color: #1a1a1a;
   margin: 0 0 14px;
 }
 
@@ -255,12 +255,12 @@ body {
 
 .cadre-clauses-footer-note {
   margin-top: 28px;
-  background: #f0f4ff;
-  border: 1px solid #d6dfff;
+  background: #fff8e1;
+  border: 1px solid #ffe082;
   border-radius: 10px;
   padding: 16px 20px;
   font-size: 13.5px;
-  color: #4a5098;
+  color: #666666;
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -270,7 +270,7 @@ body {
 .cadre-clauses-footer-note i {
   margin-top: 3px;
   font-size: 16px;
-  color: #4f6cff;
+  color: #FFD700;
   flex-shrink: 0;
 }
 
@@ -281,7 +281,7 @@ body {
 
 .step-header h2 {
   font-size: 1.4rem;
-  color: #1f2361;
+  color: #1a1a1a;
   margin: 0 0 6px;
 }
 
@@ -320,8 +320,8 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+  border-color: #FFD700;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.15);
 }
 
 .form-group textarea {
@@ -365,13 +365,13 @@ body {
 }
 
 .btn-next {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #fff;
+  background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+  color: #000;
 }
 
 .btn-next:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
 }
 
 .btn-next:disabled {
@@ -405,7 +405,7 @@ body {
 /* Step title inside form */
 .step-title {
   font-size: 1.3rem;
-  color: #1f2361;
+  color: #1a1a1a;
   margin: 0 0 20px;
   display: flex;
   align-items: center;
@@ -419,7 +419,7 @@ body {
   gap: 8px;
   padding: 20px;
   flex-wrap: wrap;
-  background: #f5f7fb;
+  background: #000;
 }
 
 .steps-container .step {
@@ -449,7 +449,8 @@ body {
 }
 
 .steps-container .step.active .step-number {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+  color: #000;
 }
 
 .steps-container .step .step-label {
@@ -470,7 +471,7 @@ body {
 .summary-section h3 {
   margin: 0 0 14px;
   font-size: 1rem;
-  color: #1f2361;
+  color: #1a1a1a;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -530,8 +531,8 @@ body {
 }
 
 .summary-section .addon-item.highlight {
-  border: 2px solid #4f6cff;
-  background: #f7f9ff;
+  border: 2px solid #FFD700;
+  background: #fffde7;
 }
 
 .addon-content {
@@ -544,7 +545,7 @@ body {
   gap: 6px;
   cursor: pointer;
   font-weight: 600;
-  color: #667eea;
+  color: #FFD700;
   white-space: nowrap;
 }
 
@@ -605,7 +606,7 @@ body {
 
 .payment-success-card h2 {
   font-size: 24px;
-  color: #1f2361;
+  color: #1a1a1a;
   margin: 0 0 8px;
 }
 
@@ -627,8 +628,8 @@ body {
 }
 
 .download-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #fff;
+  background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+  color: #000;
   border: none;
   padding: 14px 28px;
   font-size: 15px;
@@ -645,7 +646,7 @@ body {
 
 .download-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
 }
 
 .close-btn {
