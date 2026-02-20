@@ -9,9 +9,9 @@ export default function Home() {
         <div className="hero-content">
           <h1>Rental Agreement Made Simple</h1>
           <p>Fast. Digital. Secure.</p>
-          <Link to="/rental-agreement" className="cta-button">
+          {/* <Link to="/rental-agreement" className="cta-button">
             Create Agreement Now
-          </Link>
+          </Link> */}
         </div>
       </section>
 
