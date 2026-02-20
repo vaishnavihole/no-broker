@@ -1,10 +1,53 @@
 import React, { useState } from 'react';
+import { jsPDF } from 'jspdf';
 import './RentalAgreementWizard.css';
 
 export default function RentalAgreement() {
   const [added, setAdded] = useState({});
   const [addonTotal, setAddonTotal] = useState(0);
+  const [paymentDone, setPaymentDone] = useState(false);
   const baseAmount = 1148;
+
+  const handlePayment = () => {
+    setPaymentDone(true);
+  };
+
+  const handleDownloadPDF = () => {
+    const doc = new jsPDF();
+    let y = 20;
+    doc.setFontSize(20);
+    doc.setTextColor(31, 35, 97);
+    doc.text('Rental Agreement', 105, y, { align: 'center' });
+    y += 12;
+    doc.setFontSize(10);
+    doc.setTextColor(120);
+    doc.text('Generated via NoBroker', 105, y, { align: 'center' });
+    y += 14;
+    doc.line(15, y, 195, y);
+    y += 10;
+    doc.setFontSize(13);
+    doc.setTextColor(31, 35, 97);
+    doc.text('Agreement Details', 15, y);
+    y += 8;
+    doc.setFontSize(10);
+    doc.setTextColor(100);
+    doc.text('Agreement Period: 6 Months', 20, y); y += 7;
+    doc.text('Location: Indiranagar, Bangalore', 20, y); y += 14;
+    doc.setFontSize(13);
+    doc.setTextColor(31, 35, 97);
+    doc.text('Payment Summary', 15, y);
+    y += 8;
+    doc.setFontSize(10);
+    doc.setTextColor(100);
+    doc.text('Convenience Charges: Rs.399', 20, y); y += 7;
+    doc.text('ESIGN: Rs.249', 20, y); y += 7;
+    doc.text('Govt Stamp Duty: Rs.500', 20, y); y += 7;
+    doc.text('Add-ons: Rs.' + addonTotal, 20, y); y += 10;
+    doc.setFontSize(12);
+    doc.setTextColor(31, 35, 97);
+    doc.text('Total Amount: Rs.' + (baseAmount + addonTotal), 20, y);
+    doc.save('Rental_Agreement.pdf');
+  };
 
   const addons = [
     { key: 'notary', title: 'Notarised Agreement', icon: 'fa-stamp', desc: 'Legal authentication by notary', price: 350 },
@@ -125,11 +168,30 @@ export default function RentalAgreement() {
             <span id="totalAmount">₹{baseAmount + addonTotal}</span>
           </div>
 
-          <button className="pay-btn">
+          <button className="pay-btn" onClick={handlePayment}>
             <i className="fa-solid fa-lock"></i> Make Payment
           </button>
         </div>
       </div>
+
+      {paymentDone && (
+        <div className="payment-overlay">
+          <div className="payment-success-card">
+            <div className="success-icon">
+              <i className="fa-solid fa-circle-check"></i>
+            </div>
+            <h2>Payment Successful!</h2>
+            <p>Your rental agreement has been generated successfully.</p>
+            <p className="amount-paid">Amount Paid: <strong>₹{baseAmount + addonTotal}</strong></p>
+            <button className="download-btn" onClick={handleDownloadPDF}>
+              <i className="fa-solid fa-file-pdf"></i> Download Agreement PDF
+            </button>
+            <button className="close-btn" onClick={() => setPaymentDone(false)}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* CADRE ARBITRATION CLAUSES */}
       <div className="cadre-clauses-section">

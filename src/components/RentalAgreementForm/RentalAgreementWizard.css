@@ -564,6 +564,108 @@ body {
   align-items: flex-start;
 }
 
+/* ===== PAYMENT SUCCESS OVERLAY ===== */
+.payment-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.payment-success-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 40px 36px;
+  text-align: center;
+  max-width: 420px;
+  width: 90%;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 0.35s ease;
+}
+
+.payment-success-card .success-icon {
+  font-size: 64px;
+  color: #18a957;
+  margin-bottom: 16px;
+}
+
+.payment-success-card h2 {
+  font-size: 24px;
+  color: #1f2361;
+  margin: 0 0 8px;
+}
+
+.payment-success-card p {
+  color: #666;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.payment-success-card .amount-paid {
+  font-size: 16px;
+  color: #333;
+  margin: 14px 0 20px;
+}
+
+.payment-success-card .amount-paid strong {
+  color: #18a957;
+  font-size: 20px;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.close-btn {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #666;
+  margin-top: 12px;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.close-btn:hover {
+  background: #f5f5f5;
+}
+
 /* ===== RESPONSIVE: TABLET ===== */
 @media (max-width: 768px) {
   .header {
